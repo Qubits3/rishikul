@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubits & School Partnership: Code Fest Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-step::after {
+            content: '▼';
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+            color: #FFD166;
+            margin-top: 1rem;
+        }
+        .flow-step:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50" style="background-color: #073B4C;">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <header class="text-center my-8 md:my-16">
+            <h1 class="text-4xl md:text-6xl font-black text-white">Partnering for a Successful Code Fest</h1>
+            <p class="text-lg md:text-xl mt-4" style="color: #FFD166;">A Visual Guide to Our Collaborative Support Framework</p>
+        </header>
+
+        <main>
+            <section id="introduction" class="mb-16 md:mb-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white/10 rounded-2xl p-6 md:p-8 text-white">
+                        <h2 class="text-2xl font-bold mb-4" style="color: #06D6A0;">A Shared Endeavor</h2>
+                        <p class="text-base leading-relaxed">
+                            Our support model is built on a foundation of true partnership. We combine your deep understanding of your students with our curriculum expertise. This chart illustrates the division of key responsibilities, showing how we work together to create an event that is both impactful and perfectly tailored to your school.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="chart-container">
+                            <canvas id="partnershipChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="process-flow" class="mb-16 md:mb-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">The 6-Step Collaboration Journey</h2>
+                <div class="flex flex-col items-center">
+
+                    <div class="flow-step w-full max-w-2xl bg-white/10 rounded-2xl p-6 mb-6 text-white border-l-4" style="border-color: #118AB2;">
+                        <span class="text-sm font-semibold" style="color: #118AB2;">LEAD: SCHOOL</span>
+                        <h3 class="text-xl font-bold mt-1">1. Initial Planning & Event Design</h3>
+                        <p class="mt-2 text-sm">The school sets the foundation: defining the theme, categories, grade-level mapping, and duration of the competition.</p>
+                    </div>
+                    
+                    <div class="flow-step w-full max-w-2xl bg-white/10 rounded-2xl p-6 mb-6 text-white border-l-4" style="border-color: #06D6A0;">
+                        <span class="text-sm font-semibold" style="color: #06D6A0;">LEAD: QUBITS</span>
+                        <h3 class="text-xl font-bold mt-1">2. Challenge & Task Ideation</h3>
+                        <p class="mt-2 text-sm">Based on the school's plan, Qubits proposes 2-4 engaging and creative challenge ideas for each category.</p>
+                    </div>
+
+                    <div class="flow-step w-full max-w-2xl bg-white/10 rounded-2xl p-6 mb-6 text-white border-l-4" style="border-color: #118AB2;">
+                        <span class="text-sm font-semibold" style="color: #118AB2;">LEAD: SCHOOL</span>
+                        <h3 class="text-xl font-bold mt-1">3. Final Challenge Selection</h3>
+                        <p class="mt-2 text-sm">The school reviews the ideas and selects the one best-suited challenge for each category to move forward with.</p>
+                    </div>
+
+                    <div class="flow-step w-full max-w-2xl bg-white/10 rounded-2xl p-6 mb-6 text-white border-l-4" style="border-color: #06D6A0;">
+                        <span class="text-sm font-semibold" style="color: #06D6A0;">LEAD: QUBITS</span>
+                        <h3 class="text-xl font-bold mt-1">4. Rubric Development</h3>
+                        <p class="mt-2 text-sm">For each selected challenge, Qubits creates a comprehensive, clear, and fair evaluation rubric.</p>
+                    </div>
+
+                    <div class="flow-step w-full max-w-2xl bg-white/10 rounded-2xl p-6 mb-6 text-white border-l-4" style="border-color: #118AB2;">
+                        <span class="text-sm font-semibold" style="color: #118AB2;">LEAD: SCHOOL</span>
+                        <h3 class="text-xl font-bold mt-1">5. Evaluation & Finalist Selection</h3>
+                        <p class="mt-2 text-sm">The school conducts the initial evaluation for all entries using the Qubits rubric and shortlists the top finalists.</p>
+                    </div>
+                    
+                    <div class="flow-step w-full max-w-2xl bg-white/10 rounded-2xl p-6 mb-6 text-white border-l-4" style="border-color: #FF6B6B;">
+                        <span class="text-sm font-semibold" style="color: #FF6B6B;">LEAD: COLLABORATIVE</span>
+                        <h3 class="text-xl font-bold mt-1">6. Final Evaluation & Recognition</h3>
+                        <p class="mt-2 text-sm">Qubits can assist in final judging, but the school makes the final winner decision. We then co-brand and provide certificates for the winners.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contributions" class="mb-16 md:mb-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                     <div>
+                        <div class="chart-container">
+                           <canvas id="supportChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 rounded-2xl p-6 md:p-8 text-white">
+                        <h2 class="text-2xl font-bold mb-4" style="color: #06D6A0;">Our Key Support Areas</h2>
+                        <p class="text-base leading-relaxed">
+                           While the school drives the event, we provide targeted support at critical stages. This chart highlights the primary resources we contribute, from sparking initial ideas with tailored challenges to providing a fair evaluation framework and celebrating student success with official certificates.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-8 md:mt-16 py-8 border-t-2 border-white/20">
+            <p class="text-white text-lg">Ready to build an amazing Code Fest?</p>
+            <p class="mt-2" style="color: #FFD166;">Let's get started on this exciting journey together!</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function wrapLabel(str, max_width) {
+            if (typeof str !== 'string' || str.length <= max_width) {
+                return str;
+            }
+            const words = str.split(' ');
+            const lines = [];
+            let current_line = '';
+            words.forEach(word => {
+                if ((current_line + word).length > max_width) {
+                    lines.push(current_line.trim());
+                    current_line = '';
+                }
+                current_line += word + ' ';
+            });
+            lines.push(current_line.trim());
+            return lines.filter(line => line.length > 0);
+        }
+
+        const sharedTooltipOptions = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    },
+                    bodyFont: {
+                        size: 14,
+                    },
+                    titleFont: {
+                        size: 16,
+                        weight: 'bold',
+                    },
+                    padding: 12,
+                    cornerRadius: 8,
+                }
+            }
+        };
+
+        const partnershipData = {
+            labels: ['School-Led Initiatives', 'Qubits-Led Support'],
+            datasets: [{
+                label: 'Responsibility Distribution',
+                data: [60, 40],
+                backgroundColor: [
+                    '#118AB2', 
+                    '#06D6A0'  
+                ],
+                borderColor: '#073B4C',
+                borderWidth: 4,
+                hoverOffset: 4
+            }]
+        };
+
+        const partnershipConfig = {
+            type: 'doughnut',
+            data: partnershipData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '60%',
+                plugins: {
+                    ...sharedTooltipOptions.plugins,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#FFFFFF',
+                            font: {
+                                size: 14
+                            },
+                            padding: 20
+                        }
+                    }
+                }
+            }
+        };
+
+        const partnershipChart = new Chart(
+            document.getElementById('partnershipChart'),
+            partnershipConfig
+        );
+        
+        const originalLabels = [
+            'Creative Challenge & Task Ideas', 
+            'Comprehensive Evaluation Rubrics', 
+            'Finalist Evaluation Assistance', 
+            'Co-branded Winner Certificates'
+        ];
+        
+        const wrappedLabels = originalLabels.map(label => wrapLabel(label, 16));
+
+        const supportData = {
+            labels: wrappedLabels,
+            datasets: [{
+                label: 'Support Value',
+                data: [100, 90, 60, 80],
+                backgroundColor: [
+                    '#06D6A0',
+                    '#FFD166',
+                    '#FF6B6B',
+                    '#118AB2'
+                ],
+                borderRadius: 8,
+                barThickness: 30,
+            }]
+        };
+
+        const supportConfig = {
+            type: 'bar',
+            data: supportData,
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#FFFFFF',
+                            font: {
+                                size: 12
+                            }
+                        }
+                    },
+                    y: {
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                            color: '#FFFFFF',
+                            font: {
+                                size: 12,
+                                weight: '600'
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    ...sharedTooltipOptions.plugins,
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+        
+        const supportChart = new Chart(
+            document.getElementById('supportChart'),
+            supportConfig
+        );
+    </script>
+
+</body>
+</html>
